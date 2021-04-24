@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-margin-top: 150px;
+}
+
+.home {
+  background-color: #ff7632;
+  padding-top: 50px;
+}
+
+.isi > p {
+  width: 30%;
+}
+
+.footer {
+  background-color: #ff7632;
+  height: 40px;
+  line-height: 40px;
+}
+
+.project {
+  background-color: #ff7632;
+}
+
+.home > img {
+  border-radius: 50%;
+  border: 3px solid #e9b723;
+  width: 200px;
+  height: 200px;
+}
+
+.navbar {
+  background-color: #ffcb2e;
+}
+
+section > .container {
+  margin-bottom: 50px;
+}
+
+.form {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
