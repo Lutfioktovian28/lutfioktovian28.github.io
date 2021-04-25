@@ -1,4 +1,4 @@
-* {
+html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -15,11 +15,15 @@
 }
 
 .footer {
+  text-align: center;
   background-color: #ff7632;
-  height: 40px;
-  line-height: 40px;
+  height: 5%;
 }
 
+.footer > .container {
+  margin-bottom: 0;
+  height: 10%;
+}
 .project {
   background-color: #ff7632;
 }
