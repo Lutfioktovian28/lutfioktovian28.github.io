@@ -2,7 +2,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-margin-top: 150px;
+  scroll-margin-top: 160px;
 }
 
 .home {
@@ -38,7 +38,9 @@ html {
 .navbar {
   background-color: #ffcb2e;
 }
-
+section {
+  border: none !important;
+}
 section > .container {
   margin-bottom: 50px;
 }
@@ -46,4 +48,45 @@ section > .container {
 .form {
   margin-top: 50px;
   margin-bottom: 100px;
+}
+
+.dark-mode-div {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 0 20px 50px 0;
+}
+
+.color-dark {
+  color: white !important;
+  background-color: black !important;
+}
+
+.svg-dk {
+  fill: black;
+}
+
+.card-body {
+  color: black;
+}
+
+.dark-mode-div .dark-mode {
+  border: 3px solid black;
+  color: black;
+  background-color: #e9b723;
+}
+.dark-mode-div .color-dark {
+  border: 3px solid #e9b723;
+}
+
+.color-dark-navbar {
+  background-color: white;
+}
+
+.judul {
+  color: black;
+}
+
+.color-dark > .container > .row > .col > .judul {
+  color: white;
 }
