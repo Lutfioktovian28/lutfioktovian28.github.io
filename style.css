@@ -2,7 +2,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-margin-top: 160px;
+  scroll-padding-top: 100px;
 }
 
 .home {
@@ -26,6 +26,7 @@ html {
 }
 .project {
   background-color: #ff7632;
+  margin-top: -80px;
 }
 
 .home > img {
@@ -38,15 +39,13 @@ html {
 .navbar {
   background-color: #ffcb2e;
 }
-section {
-  border: none !important;
-}
+
 section > .container {
   margin-bottom: 50px;
 }
 
 .form {
-  margin-top: 50px;
+  margin-top: -80px;
   margin-bottom: 100px;
 }
 
@@ -89,4 +88,8 @@ section > .container {
 
 .color-dark > .container > .row > .col > .judul {
   color: white;
+}
+
+.about {
+  margin-top: -80px;
 }
