@@ -166,7 +166,10 @@
                   </button>
                </div>
             </div>
-            
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+               <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+             </div>
          </form>
       </div>
    </section>
@@ -182,7 +185,7 @@
 
 
 
-  
+   
     <script>
        const form = document.forms['my-contact-form']
        const btnLoading = document.querySelector('.btn-loading')
@@ -209,6 +212,7 @@
           .catch(error => console.error('Error!', error.message))
       })
     </script>
+    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
 </html>
