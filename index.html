@@ -137,31 +137,37 @@
                <h3>Page Form</h3>
             </div>
          </div>
-         <div class="row justify-content-center mt-4">
-            <div class="col-md-6">
-               <label for="name" class="form-label">Username :</label>
-               <input type="text" class="form-control" id="name" placeholder="What is your name..."> 
-            </div>
-         </div>
-         <div class="row justify-content-center mt-4">
-            <div class="col-md-6">
-               <label for="name" class="form-label">Email :</label>
-               <input type="email" class="form-control" id="email" placeholder="Your email..."> 
-            </div>
-         </div>
-         <div class="row justify-content-center mt-4">
-            <div class="col-md-6">
-               <div class="input-group">
-                  <span class="input-group-text">Your question ?</span>
-                  <textarea class="form-control" aria-label="With textarea" placeholder="Write your question here!"></textarea> 
+         <form  name="my-contact-form">
+            <div class="row justify-content-center mt-4">
+               <div class="col-md-7">
+                  <div class="alert alert-success alert-dismissible fade show d-none" role="alert">
+                     <strong>Thank you,</strong> Your message has been sent
+                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                  </div>
+                  <div class="mb-3">
+                     <label for="name" class="form-label">Username :</label>
+                     <input type="text" class="form-control" name="name" id="name" placeholder="What is your name..."> 
+                  </div>
+
+                  <div class="mb-3">
+                     <label for="name" class="form-label">Email :</label>
+                     <input type="email" class="form-control" name="email" id="email" placeholder="Your email..."> 
+                  </div>
+
+                  <div class="input-group mb-3">
+                     <span class="input-group-text">Your question ?</span>
+                     <textarea class="form-control" name="text-area" id="text-area" aria-label="With textarea" placeholder="Write your question here!"></textarea> 
+                  </div>
+
+                  <button type="submit" class="btn btn-warning btn-kirim">Send</button>
+                  <button class="btn btn-warning btn-loading d-none" type="button" disabled>
+                     <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                     Loading...
+                  </button>
                </div>
             </div>
-         </div>
-         <div class="row justify-content-center mt-4">
-            <div class="col-md-6">
-            <button type="button" class="btn btn-warning">Warning</button>
-            </div>
-         </div>
+            
+         </form>
       </div>
    </section>
    <!-- Forms -->
@@ -176,6 +182,33 @@
 
 
 
-   <script src="bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.js"></script>
+  
+    <script>
+       const form = document.forms['my-contact-form']
+       const btnLoading = document.querySelector('.btn-loading')
+       const alertSucces = document.querySelector('.alert-success')
+       const btnKirim = document.querySelector('.btn-kirim')
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbxNA_eFlRqlVwlvDqz1UFDW7zQCFZBSyAfXTFV9LXNo8Av865qr5n6WoHYx_4UQi789/exec';
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+         // Ketika tombol submit di klick
+         // tampilkan tombol loading, hilangkan tombol kirim
+         btnLoading.classList.toggle('d-none');
+         btnKirim.classList.toggle('d-none');
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+         // tampilkan tombol kirim, hilangkan tombol loading
+            btnLoading.classList.toggle('d-none');
+            btnKirim.classList.toggle('d-none');
+            // tampilkan alert
+            alertSucces.classList.toggle('d-none');
+            // hapus isi form
+            form.reset()
+            console.log('Success!', response)
+         })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>
+    
 </body>
 </html>
