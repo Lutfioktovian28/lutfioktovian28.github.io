@@ -1,4 +1,4 @@
-html {
+body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -16,19 +16,8 @@ html {
   width: 30%;
 }
 
-.footer {
-  text-align: center;
-  background-color: #ff7632;
-  padding: 8px 0;
-}
-
-.footer > .container {
-  margin-bottom: 0;
-  height: 10%;
-}
 .project {
   background-color: #ff7632;
-  /* margin-top: -80px; */
 }
 
 .home > img {
@@ -47,7 +36,6 @@ section > .container {
 }
 
 .form {
-  /* margin-top: -80px; */
   margin-bottom: 100px;
 }
 
@@ -94,4 +82,15 @@ section > .container {
 
 .about > .container > .row > .col > h3 {
   padding-top: 20px;
+}
+
+.footer {
+  text-align: center;
+  background-color: #ff7632;
+  padding: 8px 0;
+}
+
+.footer > .container {
+  margin-bottom: 0;
+  height: 10%;
 }
