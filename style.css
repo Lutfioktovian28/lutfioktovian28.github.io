@@ -17,7 +17,7 @@ html {
 .footer {
   text-align: center;
   background-color: #ff7632;
-  height: 5%;
+  padding: 8px 0;
 }
 
 .footer > .container {
