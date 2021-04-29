@@ -1,23 +1,25 @@
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  scroll-padding-top: 100px;
+  scroll-margin-top: 85px;
 }
 
+/* Navbar */
+
+.navbar {
+  background-color: #ffcb2e;
+}
+
+/* Navbar */
+
+/* Home */
 .home {
   background-color: #ff7632;
   padding-top: 50px;
 }
 .home > p {
   margin-bottom: 40px;
-}
-.isi > p {
-  width: 30%;
-}
-
-.project {
-  background-color: #ff7632;
 }
 
 .home > img {
@@ -27,16 +29,62 @@ body {
   height: 200px;
 }
 
-.navbar {
-  background-color: #ffcb2e;
+/* Home */
+
+/* About */
+
+.about > .container > .row > .col > h3 {
+  padding-top: 20px;
 }
 
-section > .container {
-  margin-bottom: 50px;
+/* About */
+
+/* Project */
+
+.project {
+  background-color: #ff7632;
 }
+.judul {
+  color: black;
+}
+/* Project */
+/* Galery */
+
+.galery-img {
+  width: 100%;
+}
+
+#galery .row > * {
+  padding: 0;
+}
+
+/* Galery */
+
+/* Form */
 
 .form {
   margin-bottom: 100px;
+}
+
+/* Form */
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  background-color: #ff7632;
+  padding: 10px 0;
+}
+.footer > .container {
+  margin-bottom: 0px !important;
+}
+
+/* Footer */
+
+/* AllQuery */
+
+section > .container {
+  margin-bottom: 50px;
 }
 
 .dark-mode-div {
@@ -72,25 +120,8 @@ section > .container {
   background-color: white;
 }
 
-.judul {
-  color: black;
-}
-
 .color-dark > .container > .row > .col > .judul {
   color: white;
 }
 
-.about > .container > .row > .col > h3 {
-  padding-top: 20px;
-}
-
-.footer {
-  text-align: center;
-  background-color: #ff7632;
-  padding: 8px 0;
-}
-
-.footer > .container {
-  margin-bottom: 0;
-  height: 10%;
-}
+/* AllQuery */

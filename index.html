@@ -7,6 +7,7 @@
    <title>Web Portofolio</title>
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="node_modules/aos/dist/aos.css"/>
 </head>
 <body>
    <!-- Navbar -->
@@ -30,26 +31,26 @@
    
    <!-- Home -->
    <section class="home jumbotron text-center d-flex flex-column justify-content-center" id="home">
-      <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" alt="moon" class="mx-auto d-block">
-      <h3 class="mt-3">Muhammad Lutfi Oktovian</h3>
-      <p class="fs-5 fw-light">student</p>
+      <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" alt="moon" class="mx-auto d-block" >
+      <h3 class="mt-3 home-h3">Muhammad Lutfi Oktovian</h3>
+      <p class="fs-5 fw-light p-home"></p>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L34.3,90.7C68.6,85,137,75,206,90.7C274.3,107,343,149,411,149.3C480,149,549,107,617,85.3C685.7,64,754,64,823,64C891.4,64,960,64,1029,69.3C1097.1,75,1166,85,1234,96C1302.9,107,1371,117,1406,122.7L1440,128L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
    </section>
    <!-- Home -->
    
    <!-- About -->
    <section class="about text-center" id="about">
-         <div class="container">
+         <div class="container" >
             <div class="row">
                <div class="col">
                   <h3>Text Judul</h3>
                </div>
             </div>
             <div class="row justify-content-evenly">
-               <div class="col-md-4">
+               <div class="col-md-4" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas harum sunt numquam sed explicabo, quibusdam quia, vero, iure voluptate minus reiciendis accusantium ullam optio atque facere. Dolore, necessitatibus assumenda?</p>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-4" data-aos="fade-left" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="500">
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas harum sunt numquam sed explicabo, quibusdam quia, vero, iure voluptate minus reiciendis accusantium ullam optio atque facere. Dolore, necessitatibus assumenda?</p>
                </div>
             </div>
@@ -61,7 +62,7 @@
    <!-- About -->
    
    <!-- Projects -->
-   <section class="project" id="project">
+   <section class="project"  id="project">
       <div class="container text-center">
          <div class="row">
             <div class="col">
@@ -71,29 +72,7 @@
                </div>
             </div>
             <div class="row justify-content-evenly mt-3">
-               <div class="col-md-4 mt-3 mb-3">
-                  <div class="card">
-                     <img src="img/guillaume-de-germain-6Xw9wMJyHus-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
-                     <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-warning">Go See..</a>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-md-4 mt-3 mb-3">
-                  <div class="card">
-                     <img src="img/louis-maniquet-71QXQUSC_Do-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
-                     <div class="card-body text-center">
-                     <h5 class="card-title">Card title</h5>
-                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                     <a href="#" class="btn btn-warning">Go See..</a>
-                     </div>
-                  </div>
-               </div>
-
-               <div class="col-md-4 mt-3 mb-3">
+               <div class="col-md-4 mt-3 mb-3" data-aos="flip-left" data-aos-duration="1000">
                   <div class="card">
                      <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
                      <div class="card-body text-center">
@@ -104,9 +83,20 @@
                   </div>
                </div>
 
-               <div class="col-md-4 mt-3 mb-3">
+               <div class="col-md-4 mt-3 mb-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="150">
                   <div class="card">
-                     <img src="img/guillaume-de-germain-6Xw9wMJyHus-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
+                     <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
+                     <div class="card-body text-center">
+                     <h5 class="card-title">Card title</h5>
+                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                     <a href="#" class="btn btn-warning">Go See..</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-4 mt-3 mb-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="300">
+                  <div class="card">
+                     <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
                      <div class="card-body text-center">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -115,9 +105,20 @@
                   </div>
                </div>
 
-               <div class="col-md-4 mt-3 mb-3">
+               <div class="col-md-4 mt-3 mb-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="450">
                   <div class="card">
-                     <img src="img/guillaume-de-germain-6Xw9wMJyHus-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
+                     <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
+                     <div class="card-body text-center">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-warning">Go See..</a>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-md-4 mt-3 mb-3" data-aos="flip-left" data-aos-duration="1000" data-aos-delay="600">
+                  <div class="card">
+                     <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="card-img-top" alt="earth" style="height: 250px;">
                      <div class="card-body text-center">
                      <h5 class="card-title">Card title</h5>
                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -136,6 +137,45 @@
          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L34.3,170.7C68.6,181,137,203,206,224C274.3,245,343,267,411,256C480,245,549,203,617,154.7C685.7,107,754,53,823,37.3C891.4,21,960,43,1029,64C1097.1,85,1166,107,1234,128C1302.9,149,1371,171,1406,181.3L1440,192L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
       </section>
       <!-- Projects -->
+
+      <!-- Galery -->
+      <section id="galery">
+         <div class="container">
+            <div class="row text-center mb-3">
+               <div class="col">
+                  <div class="judul">
+                        <h3>Galery</h3>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-md-3 col-galery">
+                     <a href="#">
+                        <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="img-fluid galery-img" alt="Gambar Percobaan" width="300" height="300">
+                     </a>
+                  </div> 
+                  <div class="col-md-3 col-galery">
+                     <a href="#">
+                        <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="img-fluid galery-img" alt="Gambar Percobaan" width="300" height="300">
+                     </a>
+                  </div> 
+                  <div class="col-md-3 col-galery">
+                     <a href="#">
+                        <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="img-fluid galery-img" alt="Gambar Percobaan" width="300" height="300">
+                     </a>
+                  </div> 
+                  <div class="col-md-3 col-galery">
+                     <a href="#">
+                        <img src="img/sayan-nath-7nmkCaMXSIM-unsplash.jpg" class="img-fluid galery-img" alt="Gambar Percobaan" width="300" height="300">
+                     </a>
+                  </div> 
+               </div>
+               </div>
+            </div>
+         </div>
+
+      </section>
+
+      <!-- Galery -->
       
    <!-- Forms -->
    <section class="form">
@@ -185,11 +225,7 @@
    <!-- Foother -->
    <section class="footer" id="contact">
       <div class="container">
-         <div class="row">
-            <div class="col">
                &copy; 2020 Copyright : Muhammad Lutfi Oktovian
-            </div>
-         </div>
       </div>
    </section>
    <div class="dark-mode-div">
@@ -201,24 +237,27 @@
    
    
    <script>
+      
+      
+      
       const form = document.forms['my-contact-form']
       const btnLoading = document.querySelector('.btn-loading')
-       const alertSucces = document.querySelector('.alert-success')
-       const btnKirim = document.querySelector('.btn-kirim')
-       const darkMode = document.querySelector('.dark-mode')
-       const home =  document.querySelector('.home')
+      const alertSucces = document.querySelector('.alert-success')
+      const btnKirim = document.querySelector('.btn-kirim')
+      const darkMode = document.querySelector('.dark-mode')
+      const home =  document.querySelector('.home')
        const project = document.querySelector('.project')
        const footer = document.querySelector('.footer')
        const pathMode = document.querySelector('.path')
        const navbar = document.querySelector('.navbar')
-
+       
        const scriptURL = 'https://script.google.com/macros/s/AKfycbxNA_eFlRqlVwlvDqz1UFDW7zQCFZBSyAfXTFV9LXNo8Av865qr5n6WoHYx_4UQi789/exec';
-
-         darkMode.addEventListener('click',function(){
-            
-            if(!document.querySelector('.color-dark')){
-
-               darkMode.innerHTML = 'Original mode'
+       
+       darkMode.addEventListener('click',function(){
+          
+          if(!document.querySelector('.color-dark')){
+             
+             darkMode.innerHTML = 'Original mode'
                darkMode.classList.toggle('color-dark')
                home.classList.toggle('color-dark')
                project.classList.toggle('color-dark')
@@ -227,7 +266,7 @@
                pathMode.classList.toggle('svg-dk')
                
             }else{
-
+               
                darkMode.innerHTML = 'Dark Mode'
                darkMode.classList.toggle('color-dark')
                home.classList.toggle('color-dark')
@@ -235,31 +274,53 @@
                footer.classList.toggle('color-dark')
                navbar.classList.toggle('color-dark-navbar')
                pathMode.classList.toggle('svg-dk')
-
+               
             }
          })
-
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-         // Ketika tombol submit di klick
-         // tampilkan tombol loading, hilangkan tombol kirim
-         btnLoading.classList.toggle('d-none');
-         btnKirim.classList.toggle('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-         // tampilkan tombol kirim, hilangkan tombol loading
+         
+         form.addEventListener('submit', e => {
+            e.preventDefault()
+            // Ketika tombol submit di klick
+            // tampilkan tombol loading, hilangkan tombol kirim
             btnLoading.classList.toggle('d-none');
             btnKirim.classList.toggle('d-none');
-            // tampilkan alert
-            alertSucces.classList.toggle('d-none');
-            // hapus isi form
-            form.reset()
-            console.log('Success!', response)
-         })
-          .catch(error => console.error('Error!', error.message))
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+         // tampilkan tombol kirim, hilangkan tombol loading
+         btnLoading.classList.toggle('d-none');
+         btnKirim.classList.toggle('d-none');
+         // tampilkan alert
+         alertSucces.classList.toggle('d-none');
+         // hapus isi form
+         form.reset()
+         console.log('Success!', response)
       })
-    </script>
-    <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+      .catch(error => console.error('Error!', error.message))
+      })
+      
+      
+   </script>
+   <script src="node_modules/aos/dist/aos.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/TextPlugin.min.js"></script>
+   <script src="/bootstrap-5.0.0-beta3-dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.p-home',{duration: 2, delay: 1.5, text:'Student...'})
+      gsap.from('.jumbotron img', {duration:1,  rotateY: 360, opacity: 0, ease:"bounce"})
+      gsap.from('.navbar', {duration:1.5, y:"-100%", opacity: 0, ease:"bounce"})
+   </script>
+   <script>
+   const galery = document.querySelectorAll('.col-galery')
+   galery.forEach((img , index) => {
+      img.dataset.aos = 'fade-down';
+      img.dataset.aosDelay = index * 100;
+      img.dataset.aosDuration = 1000;
+   })
+   AOS.init({
+      once: true
+   });
+   </script>
     
-</body>
-</html>
+   </body>
+   </html>
